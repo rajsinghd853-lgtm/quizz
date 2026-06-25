@@ -1,13 +1,10 @@
 # Quiz.AI - Live Automated Grading & Google Sheets Sync
 
 <div align="center">
-  <video src="https://github.com/Harshul23/quizzzz/raw/main/public/quiz_working.mp4" width="100%" style="max-width: 800px; border-radius: 16px;" autoplay muted loop playsinline></video>
+  <img src="public/quiz_working.gif" width="100%" style="max-width: 800px; border-radius: 16px;" alt="Quiz Working Demo" />
 </div>
 
 An advanced, responsive, and secure academic portal designed to facilitate real-time quiz creation, automatic grading, and seamless Google Sheets integration. Built with React, TypeScript, TailwindCSS, and the Google Sheets API.
-
-View the application in Google AI Studio: [AI Studio App Link](https://ai.studio/apps/9c45d251-d7b7-4fce-8a17-5986607ea0fc)
-
 ---
 
 ## 🚀 Key Features
