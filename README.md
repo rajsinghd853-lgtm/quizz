@@ -5,11 +5,18 @@
 </div>
 
 An advanced, responsive, and secure academic portal designed to facilitate real-time quiz creation, automatic grading, and seamless Google Sheets integration. Built with React, TypeScript, TailwindCSS, and the Google Sheets API.
+
+PPT drive link - https://shorturl.at/sRicu
 ---
 
 ## 🚀 Key Features
 
 ### 👨‍🏫 Teacher Dashboard
+
+<div align="center">
+  <img src="public/dashboard.jpeg" width="100%" style="max-width: 800px; border-radius: 16px;" alt="Teacher Dashboard" />
+</div>
+
 - **Comprehensive Analytics**: View completion rates, average scores, time spent, and grade distributions.
 - **Dynamic Quiz Builder**: Create timed or untimed quizzes with customized question points and multiple-choice options.
 - **Spreadsheet Syncing**: Link quizzes to Google Sheets with automated headers and row-appending.
