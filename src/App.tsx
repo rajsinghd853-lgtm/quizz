@@ -88,8 +88,17 @@ export default function App() {
   const handleGoogleLogin = () => {
     // We launch the official OAuth Implicit Flow. Because inside an iFrame nested redirections can sometimes 
     // be restricted by sandbox rules, we also provide a beautiful manual paste fallback right beside it!
-    const clientId = import.meta.env.VITE_GOOGLE_CLIENT_ID || '207024417870-kf7sedk3tcoo0fjaec0n1pdrhdlmc2uc.apps.googleusercontent.com';
-    const redirectUri = window.location.origin + window.location.pathname;
+    //const clientId = import.meta.env.VITE_GOOGLE_CLIENT_ID || '207024417870-kf7sedk3tcoo0fjaec0n1pdrhdlmc2uc.apps.googleusercontent.com';
+    //const redirectUri = window.location.origin + window.location.pathname;
+    const clientId = import.meta.env.VITE_GOOGLE_CLIENT_ID;
+const redirectUri = window.location.origin + window.location.pathname;
+
+if (!clientId) {
+  alert(`No Client ID configured! Add this redirect URI in Google Cloud Console: ${redirectUri}`);
+  console.error('[Google Sign-In] Missing VITE_GOOGLE_CLIENT_ID. Required redirect URI:', redirectUri);
+  return;
+}
+console.info('[Google Sign-In] Using redirect URI:', redirectUri);
     const scopes = [
       'https://www.googleapis.com/auth/spreadsheets',
       'https://www.googleapis.com/auth/drive.file'
